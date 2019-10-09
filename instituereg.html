@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Institue Registration Form</title>
+	</head>
+	<body>
+		<h1>Institute Registration Form</h1>
+		<form action="file_name" name="insRegForm">
+			<fieldset>  
+		      	<legend>Basic Details:</legend>  
+		      	Institute Category <select name="inscag" >
+		      						  <option >------------Select Institute Category------------</option>
+									  <option >Central University</option>
+									  <option >State University</option>
+									  <option >Private University</option>
+									  <option >Deemed University</option>
+						 			</select> <br>
+		      	Institute Name<input type="text" name="iname"><br>
+		      	State<select name="istate">
+		    			<option>Maharashtra</option>
+		    		</select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    	District<select name="idistrict">
+		    				<option>Raigadh</option>
+		    			</select><br> 
+		    	Institute Code<input type="number" name="fullname"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    	Dise Code<input type="Number"  name="mobileno"><br>
+		    	Location<input type="radio" name="loc" value="Rural" checked/> Rural &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="loc" value="urban"/> Urban <br> 
+		    	Institute Type <select name="itype" >
+		    						  <option >------------Select Institute Type------------</option>
+									  <option >Central University</option>
+									  <option >State University</option>
+									  <option >Private University</option>
+									  <option >Deemed University</option>
+						 			</select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Affiliated University State <select name="iaffstate" >
+									  <option >------------Select Affiliated Institute State------------</option>
+									  <option >Central University</option>
+									  <option >State University</option>
+									  <option >Private University</option>
+									  <option >Deemed University</option>
+						 			</select> <br>
+				Affiliated University/Board Name<select name="iaffuniv" >
+												  <option >------------Select Affiliated Institute Name------------</option>
+												  <option >Mumbai University</option>
+												  <option >State University</option>
+												  <option >Private University</option>
+												  <option >Deemed University</option>
+						 						</select> <br>		 					
+		      	Year From Which Admission Started<input type="date" name="iadmstart"><br>
+		      	Set Password<input type="password" name="ispwd" minlength="8" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="">
+		      	Confirm Password<input type="Password" name="iconfpwd">
+		    </fieldset>  
+			<br><br><br>
+			<fieldset>  
+		      	<legend>Proof Of Existence Of Institute</legend>  
+		    	Institute Establishment/Registration Certificate<input type="file" name="insest_cert" /><br>
+		   	</fieldset>  
+		   	<br><br><br>
+		   	<fieldset>  
+		      	<legend>Affiliated To</legend>  
+		    	Univeristy/Board Affilaition Certificate<input type="file" name="univaffl_cert"/><br>
+		    </fieldset>  
+		    <br><br><br>
+		    <fieldset>  
+		      	<legend>Address</legend>  
+		    	Line 1<input type="text" name="iline1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    	Line 2<input type="text"  name="iline2"><br>
+		    	City<input type="text" name="icity"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    	State<input type="text"  name="istate"><br>
+		    </fieldset>
+		    <br><br><br>
+			<fieldset>  
+		      	<legend>Contact Details:</legend>  
+		    	Principal Name<input type="text" name="ipriname"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    	Mobile Number<input type="Number"  name="imobno"><br>
+		    	Telephone<input type="Number" name="itele"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    </fieldset>  
+		   	<br><br>
+		   	<input type="checkbox" name="iaccept" > All the details and documents submitted by us are valid and true . If found guilty of submitting invalid documents, we may be held responsible for that act by us. <br><br><br>
+		    <input type="submit" value="Submit"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="reset">
+		</form>
+	</body>
+</html>

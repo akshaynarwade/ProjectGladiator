@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title >Student Registration Form</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="studentreg.css">
+	</head>
+	<body>
+		<h1 style="text-align: center;">Student Registration Form</h1>
+		<div class="myForm">
+			<form action="file_name" name="stuRegForm">
+				<div class="container">
+					<div class="formhead">Basic<span>Details</span></div> 
+				      	<hr> 
+				      	<div class="fdetails">
+				      		<table>
+				      			<tr>
+				      				<td colspan="2">Aadhar Number<input type="Number" name="aadhar" placeholder="Aadhar Number"></td>
+							    	<td colspan="2">Enter Full Name<input type="text" name="fullname"></td> 
+						    	</tr>
+						    	<tr>
+						    		<td colspan="2"> Mobile No.<input type="text"  name="mobileno" pattern="[1-9]{1}[0-9]{9}"></td>
+						    		<td colspan="2"> Enter Father Name<input type="text" name="fathername"></td> 
+						    	</tr>
+						    	<tr>
+						    		<td colspan="2"> Mother Name<input type="text"  name="mothername"></td>
+						    		<td colspan="2"> Gender    <input type="text" name="gender"></td>
+						    	</tr>
+						    	<tr>
+						    		<td colspan="2"> Date Of Birth<input type="Date"  name="dob"></td>
+						    		<td colspan="2"> Religion<select name="religion" >
+						    			  <option >------------Select Religion------------</option>
+										  <option >Hindu</option>
+										  <option >Christian</option>
+										  <option >Muslim</option>
+										  <option >Sikh</option>
+										  <option >Jain</option>
+										  <option >Buddhism</option>
+										</select></td>
+								</tr>
+								<tr>
+									<td>
+										Category/Community<input type="text" name="mstatus">
+									</td>
+								</tr>		    	
+					    	</table>
+				    	</div> 
+				</div>
+				<br><br><br>
+				<div class="container">  
+			      	<div class="formhead">Academic<span>Details</span></div>  
+			      	<hr>
+			      	<div class="fdetails">
+				    	Institue Name <select name="iname" >
+				    					  <option >------------Select Institute Name------------</option>
+										  <option >SAKEC</option>
+										  <option >Christian</option>
+										  <option >Muslim</option>
+										  <option >Sikh</option>
+										  <option >Jain</option>
+									  </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    	Current Course<input type="text"  name="Current_course"><br>
+				    	Current Year<input type="text" name="Current_year"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    	Mode Of Study<select name="mode">
+				    					<option>Full-Time</option>
+				    					<option>Part-Time</option>
+				    				</select><br>
+				    	Class Start Date<input type="text" name="classstartd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    	University Name<input type="text"  name="univ_name"><br>
+				    	Previous Course<input type="text" name="prev_crs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    	Previous Passing Year<input type="text"  name="prev_pass_year"><br>
+				    	Previous Course %<input type="Number" name="prev_perc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				    </div>
+			   	</div>  
+			   	<br><br><br>
+			   	<div class="container">  
+			      	<div class="formhead">10th<span>Class</span></div>    
+			    	<hr>
+			    	Roll Number<input type="Number" name="xrollno"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    	Board Name<input type="text"  name="xbname"><br>
+			    	Passing Year<input type="text" name="xpassyear"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    	Percentage Obtained<input type="Number"  name="xperc"><br>
+			    </div>  
+			    <br><br><br>
+			    <div class="container">  
+			      	<div class="formhead">12th<span>Class</span></div>  
+			    	<hr>
+			    	Roll Number<input type="Number" name="xiirollno"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    	Board Name<input type="text"  name="xiibname"><br>
+			    	Passing Year<input type="text" name="xiipassyear"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    	Percentage Obtained<input type="Number"  name="xiiperc"><br>
+			    </div>
+			    <br><br><br>
+				<div class="container">  
+			      	<div class="formhead">Fee<span>Details</span></div> 
+			      	<hr> 
+			    	Admission Fee<input type="Number" name="admfee"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    	Tuition Fee<input type="Number"  name="tutfee"><br>
+			    	Other Fee<input type="Number" name="othfee"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    </div>  
+			   	<br><br><br>
+			   	<div class="container">  
+			      	<div class="formhead">Other<span>Personal</span>Details</div> 
+			      	<hr>  
+			    	Is Disabled<select name="disabled">
+			    					<option>Yes</option>
+			    					<option>No</option>
+			    				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    	Type Of Disability<input type="text"  name="tod"><br>
+			    	% Of Disability<input type="Number" name="percofdis"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    	Marital Status<select name="mstatus">
+			    					<option>Married</option>
+			    					<option>Un-Married</option>
+			    					</select><br>
+			    	Parents Profession<input type="text" name="parpro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			   	</div>  
+			   	<br><br><br>
+			   	<div class="container">  
+			      	<div class="formhead">Address<span>Details</span></div> 
+			      	<hr>   
+			    	State<select name="stustate" id="stustate">
+			    			<option value="">------------Select State------------</option>
+							<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+							<option value="Andhra Pradesh">Andhra Pradesh</option>
+							<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+							<option value="Assam">Assam</option>
+							<option value="Bihar">Bihar</option>
+							<option value="Chandigarh">Chandigarh</option>
+							<option value="Chhattisgarh">Chhattisgarh</option>
+							<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+							<option value="Daman and Diu">Daman and Diu</option>
+							<option value="Delhi">Delhi</option>
+							<option value="Goa">Goa</option>
+							<option value="Gujarat">Gujarat</option>
+							<option value="Haryana">Haryana</option>
+							<option value="Himachal Pradesh">Himachal Pradesh</option>
+							<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+							<option value="Jharkhand">Jharkhand</option>
+							<option value="Karnataka">Karnataka</option>
+							<option value="Kerala">Kerala</option>
+							<option value="Lakshadweep">Lakshadweep</option>
+							<option value="Madhya Pradesh">Madhya Pradesh</option>
+							<option value="Maharashtra">Maharashtra</option>
+							<option value="Manipur">Manipur</option>
+							<option value="Meghalaya">Meghalaya</option>
+							<option value="Mizoram">Mizoram</option>
+							<option value="Nagaland">Nagaland</option>
+							<option value="Orissa">Orissa</option>
+							<option value="Pondicherry">Pondicherry</option>
+							<option value="Punjab">Punjab</option>
+							<option value="Rajasthan">Rajasthan</option>
+							<option value="Sikkim">Sikkim</option>
+							<option value="Tamil Nadu">Tamil Nadu</option>
+							<option value="Tripura">Tripura</option>
+							<option value="Uttaranchal">Uttaranchal</option>
+							<option value="Uttar Pradesh">Uttar Pradesh</option>
+							<option value="West Bengal">West Bengal</option>
+			    		</select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    	District<select name="studistrict" id="studistrict" size="1">
+			    				<option>----------Select District--------</option>
+			    			</select><br> 
+			    	Block/Taluka<select name="stublock">
+			    					<option>Taluka</option>
+			    				</select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    	House No<input type="Number" name="Pincode"> <br>
+			    	Street No.<input type="text" name="addr"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    	PinCode<input type="Number" name="Pincode"> <br>
+			   	</div> 
+			   	<br><br><br> 
+			   	<div class="container">  
+			      	<div class="formhead">Available<span>Scheme</span></div> 
+			      	<hr> 
+			    									<option >------------Select Scheme------------</option>
+			    									<option>Post Matric Scholarship</option>
+			    									<option>National Merit Scholarship</option>
+			    									<option>Central Scholarship Scheme</option>
+			    							</select><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    </div> 
+			    <br><br><br> 
+			    <div class="container">  
+			      	<div class="formhead">Document<span>Upload</span>Section</div> 
+			      	<hr> 
+			    	Domicile Certificate<input type="file" name="dom_cert"  /><br>
+			    	Student Photograph<input type="file" name="stu_phg"/><br>
+			    	Institute ID Card<input type="file" name="ins_card" /><br>
+			    	Caste/Income Certificate<input type="file" name="inc_cert" /><br>
+			    	Previous Year Marksheet<input type="file" name="prev_mark" /><br>
+			    	Fee Receipt Of Current Year<input type="file" name="fee_rct" /><br>
+			    	Bank Passbook(Front Page)<input type="file" name="bank_pass" /><br>
+			    	Aadhar Card<input type="file" name="aad_card" /><br>
+			    	10th Class Marksheet<input type="file" name="ssc_cert" /><br>
+			    	12th Class Marksheet<input type="file" name="hsc_cert" /><br>
+			    </div>
+			    <br><br><br> 
+			    <input type="checkbox" name="accept" > All the details furnished by me are true  to the best of my knowledge if any mistakes are found then I many be disqualified for this scholarship scheme announced by government of india or by state government <br>
+			    <br><br><br> 
+
+			    <input type="submit" value="submit"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="reset">
+
+
+			</form>
+		</div>
+	</body>
+</html>
