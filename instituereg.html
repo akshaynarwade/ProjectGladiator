@@ -2,83 +2,183 @@
 <html>
 	<head>
 		<title>Institue Registration Form</title>
+		<link rel="stylesheet" type="text/css" href="institutereg.css">
+		<script type="text/javascript" src="institutereg.js"></script>
 	</head>
 	<body>
-		<h1>Institute Registration Form</h1>
-		<form action="file_name" name="insRegForm">
-			<fieldset>  
-		      	<legend>Basic Details:</legend>  
-		      	Institute Category <select name="inscag" >
-		      						  <option >------------Select Institute Category------------</option>
-									  <option >Central University</option>
-									  <option >State University</option>
-									  <option >Private University</option>
-									  <option >Deemed University</option>
-						 			</select> <br>
-		      	Institute Name<input type="text" name="iname"><br>
-		      	State<select name="istate">
-		    			<option>Maharashtra</option>
-		    		</select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		    	District<select name="idistrict">
-		    				<option>Raigadh</option>
-		    			</select><br> 
-		    	Institute Code<input type="number" name="fullname"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		    	Dise Code<input type="Number"  name="mobileno"><br>
-		    	Location<input type="radio" name="loc" value="Rural" checked/> Rural &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="loc" value="urban"/> Urban <br> 
-		    	Institute Type <select name="itype" >
-		    						  <option >------------Select Institute Type------------</option>
-									  <option >Central University</option>
-									  <option >State University</option>
-									  <option >Private University</option>
-									  <option >Deemed University</option>
-						 			</select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				Affiliated University State <select name="iaffstate" >
-									  <option >------------Select Affiliated Institute State------------</option>
-									  <option >Central University</option>
-									  <option >State University</option>
-									  <option >Private University</option>
-									  <option >Deemed University</option>
-						 			</select> <br>
-				Affiliated University/Board Name<select name="iaffuniv" >
-												  <option >------------Select Affiliated Institute Name------------</option>
-												  <option >Mumbai University</option>
-												  <option >State University</option>
-												  <option >Private University</option>
-												  <option >Deemed University</option>
-						 						</select> <br>		 					
-		      	Year From Which Admission Started<input type="date" name="iadmstart"><br>
-		      	Set Password<input type="password" name="ispwd" minlength="8" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="">
-		      	Confirm Password<input type="Password" name="iconfpwd">
-		    </fieldset>  
-			<br><br><br>
-			<fieldset>  
-		      	<legend>Proof Of Existence Of Institute</legend>  
-		    	Institute Establishment/Registration Certificate<input type="file" name="insest_cert" /><br>
-		   	</fieldset>  
-		   	<br><br><br>
-		   	<fieldset>  
-		      	<legend>Affiliated To</legend>  
-		    	Univeristy/Board Affilaition Certificate<input type="file" name="univaffl_cert"/><br>
-		    </fieldset>  
-		    <br><br><br>
-		    <fieldset>  
-		      	<legend>Address</legend>  
-		    	Line 1<input type="text" name="iline1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		    	Line 2<input type="text"  name="iline2"><br>
-		    	City<input type="text" name="icity"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		    	State<input type="text"  name="istate"><br>
-		    </fieldset>
-		    <br><br><br>
-			<fieldset>  
-		      	<legend>Contact Details:</legend>  
-		    	Principal Name<input type="text" name="ipriname"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		    	Mobile Number<input type="Number"  name="imobno"><br>
-		    	Telephone<input type="Number" name="itele"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		    </fieldset>  
-		   	<br><br>
-		   	<input type="checkbox" name="iaccept" > All the details and documents submitted by us are valid and true . If found guilty of submitting invalid documents, we may be held responsible for that act by us. <br><br><br>
-		    <input type="submit" value="Submit"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="reset">
-		</form>
+		<div class="formhead" style="text-align: center;">Institute<span>Registration</span>Form</div><br>
+		<div class="instituregform">
+			<form action="file_name" name="insRegForm">
+				<div class="container">  
+					<div class="formhead">Basic<span>Details</span></div>
+					<hr>
+					<div class="fdetails">
+						<table>
+							<tr>
+								<td colspan="2">Institute Category <select name="inscag" >
+														<option >------------Select Institute Category------------</option>
+														<option >Central University</option>
+														<option >State University</option>
+														<option >Private University</option>
+														<option >Deemed University</option>
+														</select> </td>
+								<td colspan="2">Institute Name<input type="text" name="iname"></td>
+							</tr>
+
+							<tr>
+								<td colspan="2">State<br><select name="stateSel" id="stateSel">
+															<option value="">------------Select State------------</option>
+															<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+															<option value="Andhra Pradesh">Andhra Pradesh</option>
+															<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+															<option value="Assam">Assam</option>
+															<option value="Bihar">Bihar</option>
+															<option value="Chandigarh">Chandigarh</option>
+															<option value="Chhattisgarh">Chhattisgarh</option>
+															<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+															<option value="Daman and Diu">Daman and Diu</option>
+															<option value="Delhi">Delhi</option>
+															<option value="Goa">Goa</option>
+															<option value="Gujarat">Gujarat</option>
+															<option value="Haryana">Haryana</option>
+															<option value="Himachal Pradesh">Himachal Pradesh</option>
+															<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+															<option value="Jharkhand">Jharkhand</option>
+															<option value="Karnataka">Karnataka</option>
+															<option value="Kerala">Kerala</option>
+															<option value="Lakshadweep">Lakshadweep</option>
+															<option value="Madhya Pradesh">Madhya Pradesh</option>
+															<option value="Maharashtra">Maharashtra</option>
+															<option value="Manipur">Manipur</option>
+															<option value="Meghalaya">Meghalaya</option>
+															<option value="Mizoram">Mizoram</option>
+															<option value="Nagaland">Nagaland</option>
+															<option value="Orissa">Orissa</option>
+															<option value="Pondicherry">Pondicherry</option>
+															<option value="Punjab">Punjab</option>
+															<option value="Rajasthan">Rajasthan</option>
+															<option value="Sikkim">Sikkim</option>
+															<option value="Tamil Nadu">Tamil Nadu</option>
+															<option value="Tripura">Tripura</option>
+															<option value="Uttaranchal">Uttaranchal</option>
+															<option value="Uttar Pradesh">Uttar Pradesh</option>
+															<option value="West Bengal">West Bengal</option>
+														 </select></td> 
+								<td colspan="2">District<select name="districtSel" id="districtSel">
+															<option>Raigadh</option>
+														</select></td> 
+							</tr>
+							<tr>
+									<td colspan="2">Institute Code<input type="number" name="fullname"></td>
+									<td colspan="2">Dise Code<input type="Number"  name="mobileno"></td>
+							</tr>
+							<tr>
+									<td colspan="2">Location</td>
+									<td colspan="1"><input type="radio" name="loc" value="Rural" checked/> Rural</td> 
+									<td colspan="1"><input type="radio" name="loc" value="urban"/> Urban </td>
+							</tr>
+							<tr>
+									<td colspan="2">Institute Type <select name="itype" >
+														<option >------------Select Institute Type------------</option>
+														<option >Central University</option>
+														<option >State University</option>
+														<option >Private University</option>
+														<option >Deemed University</option>
+														</select></td>
+									<td colspan="2">Affiliated University State <select name="iaffstate" >
+														<option >------------Select Affiliated Institute State------------</option>
+														<option >Central University</option>
+														<option >State University</option>
+														<option >Private University</option>
+														<option >Deemed University</option>
+														</select> </td>
+							</tr>
+							<tr>
+									<td colspan="2">Affiliated University/Board Name<select name="iaffuniv" >
+																	<option >------------Select Affiliated Institute Name------------</option>
+																	<option >Mumbai University</option>
+																	<option >State University</option>
+																	<option >Private University</option>
+																	<option >Deemed University</option>
+																	</select></td>		 					
+									<td colspan="2">Year From Which Admission Started<input type="date" name="iadmstart"></td>
+							</tr>
+							<tr>
+									<td colspan="2">Set Password<input type="password" name="ispwd" minlength="8" maxlength="15" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required=""></td>
+									<td colspan="2">Confirm Password<input type="Password" name="iconfpwd"></td>
+							</tr>
+						</table>
+					</div>
+				</div> 
+				<br><br><br>
+				<div class="container">  
+					<div class="formhead">Proof<span>Of</span>Existence<span>Of</span>Institue</div>
+					<hr>  
+					<div class="fdetails"> 
+						Institute Establishment/Registration Certificate<input type="file" name="insest_cert" />
+					</div>
+				</div>  
+				<br><br><br>
+				<div class="container">  
+					<div class="formhead">Affiliated<span>To</div> 
+					<hr> 
+					<div class="fdetails">
+						Univeristy/Board Affilaition Certificate<input type="file" name="univaffl_cert"/>
+					</div>
+				</div>  
+				<br><br><br>
+				<div class="container">  
+					<div class="formhead">De<span>tails</span></div>
+					<hr>  
+					<div class="fdetails">  
+						<table>
+							<tr>
+								<td colspan="2">Line 1<input type="text" name="iline1"></td>
+								<td colspan="2">Line 2<input type="text"  name="iline2"></td>
+							</tr>
+							<tr>
+								<td colspan="2">City<br><input type="text" name="icity"></td>
+								<td colspan="2">State<input type="text"  name="istate"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<br><br><br>
+				<div class="container">
+					<div class="formhead">Contact<span>Details</span></div>
+					<hr>  
+					<div class="fdetails">  
+						<table>
+							<tr>
+								<td colspan="2">Principal Name<input type="text" name="ipriname"></td>
+								<td colspan="2">Mobile Number<input type="Number"  name="imobno"></td>
+							</tr>
+							<tr>
+								<td colspan="2">Telephone<input type="Number" name="itele"></td>
+							</tr>
+						</table>
+					</div>
+				</div>  
+				<br><br>
+				<div class="container">
+			    	<div class="fdetails">
+				   		 <input type="checkbox" name="accept" > All the details and documents submitted by us are valid and true . If found guilty of submitting invalid documents, we may be held responsible for that act by us
+					</div>
+				</div>
+				<br><br><br>
+				<div class="container">  
+			      	<hr> 
+				    <div class="fdetails">
+				    	<table>
+				    		<tr>
+				    			<td colspan="2"><div class="formhead">Sub<span>mit</span></div><input type="submit" value="Submit Form"></td>
+				    			<td colspan="2"><div class="formhead">Res<span>et</span></div><input type="reset"></td>
+				    		</tr>
+				    	</table>
+				    </div>
+			    </div> 
+				
+			</form>
+		</div>
 	</body>
 </html>
